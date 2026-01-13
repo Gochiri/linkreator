@@ -21,3 +21,16 @@ dist/
 # Logs
 *.log
 npm-debug.log*
+
+# Claude temp files
+tmpclaude-*
+nul
+
+# Playwright MCP
+.playwright-mcp/
+
+# Claude local settings
+.claude/settings.local.json
+
+# Export zip (regenerated on demand)
+product-plan.zip
