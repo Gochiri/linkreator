@@ -1,0 +1,59 @@
+{
+  "contentTypes": [
+    { "id": "tip", "label": "Tip práctico", "icon": "lightbulb", "description": "Consejo accionable en 3-5 pasos" },
+    { "id": "storytelling", "label": "Storytelling", "icon": "book-open", "description": "Historia personal con lección" },
+    { "id": "framework", "label": "Framework", "icon": "layout-grid", "description": "Sistema o método paso a paso" },
+    { "id": "opinion", "label": "Opinión", "icon": "message-circle", "description": "Punto de vista contrarian o de industria" },
+    { "id": "case-study", "label": "Caso de estudio", "icon": "bar-chart", "description": "Resultado real con datos" }
+  ],
+  "samplePosts": [
+    {
+      "id": "post-1",
+      "type": "tip",
+      "content": "El 90% de las empresas automatizan mal.\n\nNo porque usen malas herramientas.\nSino porque automatizan procesos rotos.\n\nAntes de automatizar, pregúntate:\n\n→ ¿Este proceso necesita existir?\n→ ¿Puede simplificarse primero?\n→ ¿Quién se beneficia realmente?\n\nLa mejor automatización es la que elimina pasos innecesarios.\n\nNo la que los hace más rápido.",
+      "hashtags": ["#Automatización", "#IA", "#Productividad", "#Innovación", "#Tech"],
+      "charCount": 382,
+      "tone": "direct"
+    },
+    {
+      "id": "post-2",
+      "type": "storytelling",
+      "content": "Hace 2 años dejé un trabajo estable para dedicarme a las automatizaciones.\n\nTodos me dijeron que estaba loco.\n\nMi primer mes: $0 de ingresos.\nMi segundo mes: $200.\nMi sexto mes: más que mi salario anterior.\n\nLo que cambió no fue mi habilidad técnica.\nFue entender que la gente no compra automatizaciones.\n\nCompra tiempo de vuelta.\nCompra menos errores.\nCompra dormir tranquilos.\n\nSi vendes tecnología, deja de hablar de features.\nEmpieza a hablar de resultados.",
+      "hashtags": ["#Emprendimiento", "#Automatización", "#PersonalBranding", "#LinkedIn", "#Startups"],
+      "charCount": 489,
+      "tone": "storytelling"
+    },
+    {
+      "id": "post-3",
+      "type": "framework",
+      "content": "Mi framework de 4 pasos para automatizar cualquier negocio:\n\n𝟭. MAPEAR\nDocumenta cada proceso manual.\nSin excepciones.\n\n𝟮. PRIORIZAR\nOrdena por: tiempo invertido × frecuencia × costo de error.\nLos top 3 son tu punto de partida.\n\n𝟯. SIMPLIFICAR\nElimina pasos antes de automatizar.\nMenos complejidad = mejor resultado.\n\n𝟰. AUTOMATIZAR\nAhora sí. Con el proceso limpio.\nEmpieza simple, itera después.\n\nEl error #1: saltar al paso 4 sin hacer el 1.",
+      "hashtags": ["#Framework", "#Automatización", "#Procesos", "#Eficiencia", "#Business"],
+      "charCount": 445,
+      "tone": "framework"
+    }
+  ],
+  "suggestedHashtags": {
+    "automatizacion": ["#Automatización", "#NoCode", "#Zapier", "#Make", "#N8N", "#Workflows"],
+    "ia": ["#IA", "#InteligenciaArtificial", "#AI", "#ChatGPT", "#MachineLearning", "#DeepLearning"],
+    "innovacion": ["#Innovación", "#Tecnología", "#FuturoDelTrabajo", "#TransformaciónDigital", "#Tech"],
+    "emprendimiento": ["#Emprendimiento", "#Startups", "#Negocios", "#Business", "#Solopreneur"],
+    "productividad": ["#Productividad", "#GestiónDelTiempo", "#Eficiencia", "#Hábitos", "#Growth"]
+  },
+  "brandTone": {
+    "style": "Dan Koe / Justin Welsh",
+    "traits": ["Directo", "Minimalista", "Accionable", "Personal", "Contrarian"],
+    "rules": [
+      "Frases cortas. Una idea por línea.",
+      "Usa → para listas y pasos.",
+      "Empieza con un hook fuerte (dato, pregunta, afirmación bold).",
+      "Cierra con una reflexión o call-to-action sutil.",
+      "Evita jerga corporativa. Habla como humano.",
+      "Usa números y datos concretos cuando sea posible."
+    ]
+  },
+  "creator": {
+    "name": "Tu Nombre",
+    "title": "Automatizaciones & IA | Soluciones nuevas a problemas viejos",
+    "avatar": "/placeholder-avatar.jpg"
+  }
+}

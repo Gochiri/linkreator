@@ -16,3 +16,6 @@ Configuración del tono de marca (estilo Koe/Welsh), definición del avatar de a
 
 ### 5. Content Calendar
 Calendario de planificación para organizar y programar publicaciones, mantener frecuencia constante y visualizar el contenido por semana/mes.
+
+### 6. Content Sources
+Hub de referencias para pegar texto, links de YouTube u otras fuentes de inspiración, extraer ideas clave y transformarlas en contenido de LinkedIn con el tono de marca configurado.

@@ -1,0 +1,71 @@
+{
+  "templates": [
+    { "id": "minimal-dark", "name": "Minimal Dark", "bgColor": "#1C1917", "textColor": "#FAFAF9", "accentColor": "#84CC16", "preview": "dark" },
+    { "id": "clean-light", "name": "Clean Light", "bgColor": "#FAFAF9", "textColor": "#1C1917", "accentColor": "#0EA5E9", "preview": "light" },
+    { "id": "bold-gradient", "name": "Bold Gradient", "bgColor": "#1E293B", "textColor": "#F8FAFC", "accentColor": "#F59E0B", "preview": "gradient" },
+    { "id": "lime-pop", "name": "Lime Pop", "bgColor": "#0F172A", "textColor": "#F0FDF4", "accentColor": "#84CC16", "preview": "lime" }
+  ],
+  "sampleCarousel": {
+    "id": "carousel-1",
+    "title": "5 automatizaciones que todo negocio necesita",
+    "templateId": "minimal-dark",
+    "slides": [
+      {
+        "id": "slide-1",
+        "type": "cover",
+        "title": "5 Automatizaciones que TODO negocio necesita",
+        "subtitle": "Y que puedes implementar esta semana",
+        "slideNumber": 1
+      },
+      {
+        "id": "slide-2",
+        "type": "content",
+        "title": "1. Onboarding de clientes",
+        "body": "Automatiza los emails de bienvenida, accesos y primer seguimiento.\n\nHerramienta: Make + Gmail + Notion",
+        "slideNumber": 2
+      },
+      {
+        "id": "slide-3",
+        "type": "content",
+        "title": "2. Seguimiento de leads",
+        "body": "CRM automático que mueve leads por etapas según su actividad.\n\nHerramienta: N8N + Airtable + WhatsApp",
+        "slideNumber": 3
+      },
+      {
+        "id": "slide-4",
+        "type": "content",
+        "title": "3. Reportes semanales",
+        "body": "Dashboard que se genera solo cada lunes con métricas clave.\n\nHerramienta: Google Sheets + Looker + Slack",
+        "slideNumber": 4
+      },
+      {
+        "id": "slide-5",
+        "type": "content",
+        "title": "4. Facturación recurrente",
+        "body": "Facturas que se crean y envían solas al cerrar un deal.\n\nHerramienta: Stripe + Zapier + Email",
+        "slideNumber": 5
+      },
+      {
+        "id": "slide-6",
+        "type": "content",
+        "title": "5. Soporte nivel 1",
+        "body": "Chatbot con IA que resuelve el 70% de consultas repetitivas.\n\nHerramienta: ChatGPT API + WhatsApp Business",
+        "slideNumber": 6
+      },
+      {
+        "id": "slide-7",
+        "type": "cta",
+        "title": "¿Quieres implementar alguna?",
+        "body": "Sígueme para más contenido sobre automatizaciones e IA.",
+        "slideNumber": 7
+      }
+    ]
+  },
+  "slideTypes": [
+    { "id": "cover", "label": "Portada", "icon": "image" },
+    { "id": "content", "label": "Contenido", "icon": "type" },
+    { "id": "quote", "label": "Cita", "icon": "quote" },
+    { "id": "stats", "label": "Estadística", "icon": "bar-chart-2" },
+    { "id": "cta", "label": "Call to Action", "icon": "mouse-pointer" }
+  ]
+}

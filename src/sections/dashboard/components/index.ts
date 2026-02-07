@@ -1,8 +1,0 @@
-export { Dashboard } from './Dashboard'
-export { ProductivityGauge } from './ProductivityGauge'
-export { MetricCard } from './MetricCard'
-export { TrendChart } from './TrendChart'
-export { GoalProgressCard } from './GoalProgressCard'
-export { MotivationalCard } from './MotivationalCard'
-export { AIInsightCard } from './AIInsightCard'
-export { AchievementBadge } from './AchievementBadge'
