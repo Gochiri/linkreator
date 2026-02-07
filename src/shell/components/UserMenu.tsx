@@ -21,7 +21,6 @@ export function UserMenu({ user, onLogout }: UserMenuProps) {
 
   return (
     <div className="flex items-center gap-3">
-      {/* Avatar */}
       <div className="flex-shrink-0">
         {user.avatarUrl ? (
           <img
@@ -30,15 +29,14 @@ export function UserMenu({ user, onLogout }: UserMenuProps) {
             className="w-9 h-9 rounded-full object-cover"
           />
         ) : (
-          <div className="w-9 h-9 rounded-full bg-violet-100 dark:bg-violet-900/50 flex items-center justify-center">
-            <span className="text-sm font-medium text-violet-700 dark:text-violet-300">
+          <div className="w-9 h-9 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+            <span className="text-sm font-medium text-blue-600">
               {initials}
             </span>
           </div>
         )}
       </div>
 
-      {/* User info */}
       <div className="flex-1 min-w-0">
         <p className="text-sm font-medium text-slate-900 dark:text-slate-100 truncate">
           {user.name}
@@ -50,7 +48,6 @@ export function UserMenu({ user, onLogout }: UserMenuProps) {
         )}
       </div>
 
-      {/* Logout button */}
       {onLogout && (
         <button
           onClick={onLogout}
