@@ -19,3 +19,6 @@ Calendario de planificación para organizar y programar publicaciones, mantener 
 
 ### 6. Content Sources
 Hub de referencias para pegar texto, links de YouTube u otras fuentes de inspiración, extraer ideas clave y transformarlas en contenido de LinkedIn con el tono de marca configurado.
+
+### 7. Canvas
+Workspace de contenido tipo knowledge base para organizar notas, links, archivos y recursos que alimentan la creación de contenido. Permite guardar referencias en carpetas, escribir notas rápidas en markdown, y tener todo el material de inspiración centralizado.
