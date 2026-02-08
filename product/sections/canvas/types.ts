@@ -56,3 +56,25 @@ export interface CanvasData {
   sidebarSections: SidebarSection[]
   stats: CanvasStats
 }
+
+// Canvas Workspace Props
+export interface CanvasWorkspaceProps {
+  folders: CanvasFolder[]
+  notes: CanvasNote[]
+  links: CanvasLink[]
+  sidebarSections: SidebarSection[]
+  stats: CanvasStats
+  selectedFolderId?: string
+  selectedSection?: string
+  searchQuery?: string
+  onCreateNote?: () => void
+  onCreateLink?: () => void
+  onCreateFolder?: () => void
+  onSelectFolder?: (folderId: string) => void
+  onSelectSection?: (sectionId: string) => void
+  onSearch?: (query: string) => void
+  onItemClick?: (item: CanvasItem) => void
+  onToggleFavorite?: (itemId: string) => void
+  onDeleteItem?: (itemId: string) => void
+  onMoveItem?: (itemId: string, folderId: string) => void
+}
