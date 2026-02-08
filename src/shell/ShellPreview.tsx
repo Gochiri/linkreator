@@ -5,6 +5,7 @@ import {
   UserCircle,
   CalendarDays,
   Bookmark,
+  LayoutGrid,
 } from 'lucide-react'
 import { AppShell } from './components/AppShell'
 import type { NavigationItem } from './components/MainNav'
@@ -18,6 +19,7 @@ export default function ShellPreview() {
     { label: 'Brand & Avatar', href: '/brand-avatar', icon: UserCircle },
     { label: 'Content Calendar', href: '/content-calendar', icon: CalendarDays },
     { label: 'Content Sources', href: '/content-sources', icon: Bookmark },
+    { label: 'Canvas', href: '/canvas', icon: LayoutGrid },
   ]
 
   const user: User = {

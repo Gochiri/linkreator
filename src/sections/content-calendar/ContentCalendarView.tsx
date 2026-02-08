@@ -11,8 +11,10 @@ export default function ContentCalendarView() {
   const [month, setMonth] = useState(1) // 0-indexed, so 1 = February
   const [viewMode, setViewMode] = useState<ViewMode>('month')
   const [selectedPost, setSelectedPost] = useState<ScheduledPost | null>(null)
+  
+  // Lift posts to state to allow drag & drop updates
+  const [posts, setPosts] = useState<ScheduledPost[]>(data.scheduledPosts as ScheduledPost[])
 
-  const posts = data.scheduledPosts as ScheduledPost[]
   const contentTypeColors = data.contentTypeColors as Record<ContentType, ContentTypeConfig>
   const publishingStats = data.publishingStats as PublishingStatsData
 
@@ -34,6 +36,16 @@ export default function ContentCalendarView() {
       setMonth(month + 1)
     }
     setSelectedPost(null)
+  }
+
+  const handleMovePost = (post: ScheduledPost, newDate: string) => {
+    setPosts(currentPosts => 
+      currentPosts.map(p => 
+        p.id === post.id 
+          ? { ...p, date: newDate, status: p.status === 'idea' ? 'draft' : p.status } 
+          : p
+      )
+    )
   }
 
   return (
@@ -62,13 +74,13 @@ export default function ContentCalendarView() {
       </div>
 
       {/* Publishing Stats */}
-      <div className="mb-6 bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 dark:border-stone-800 p-4">
+      <div className="mb-8 bg-white/80 dark:bg-stone-900/80 backdrop-blur-sm rounded-2xl border border-stone-200/60 dark:border-stone-800/60 p-5 shadow-sm">
         <PublishingStats stats={publishingStats} weeklyGoal={data.weeklyGoal} />
       </div>
 
       {/* Calendar + Detail Panel */}
-      <div className="flex gap-6">
-        <div className="flex-1">
+      <div className="flex gap-8 items-start">
+        <div className="flex-1 shadow-xl shadow-stone-200/50 dark:shadow-none rounded-2xl overflow-hidden border border-stone-200/60 dark:border-stone-800/60">
           <MonthGrid
             year={year}
             month={month}
@@ -77,20 +89,23 @@ export default function ContentCalendarView() {
             selectedPostId={selectedPost?.id ?? null}
             onSelectPost={(post) => setSelectedPost(post)}
             onAddPost={(date) => console.log('Add post on', date)}
+            onMovePost={handleMovePost}
             today="2026-02-07"
           />
         </div>
 
         {/* Detail Panel */}
         {selectedPost && (
-          <PostDetailPanel
-            post={selectedPost}
-            contentTypeColors={contentTypeColors}
-            onClose={() => setSelectedPost(null)}
-            onEdit={(post) => console.log('Edit:', post)}
-            onDelete={(post) => console.log('Delete:', post)}
-            onViewContent={(post) => console.log('View:', post)}
-          />
+          <div className="w-80 sticky top-6 animate-in slide-in-from-right-4 duration-300">
+            <PostDetailPanel
+              post={selectedPost}
+              contentTypeColors={contentTypeColors}
+              onClose={() => setSelectedPost(null)}
+              onEdit={(post) => console.log('Edit:', post)}
+              onDelete={(post) => console.log('Delete:', post)}
+              onViewContent={(post) => console.log('View:', post)}
+            />
+          </div>
         )}
       </div>
     </div>

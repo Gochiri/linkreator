@@ -29,6 +29,15 @@ Publicación programada en el calendario de contenido. Vincula un post, carrusel
 ### ContentSource
 Referencia externa usada como inspiración: texto pegado, link de YouTube, artículo o cualquier fuente. Se transforma en ideas clave para generar contenido.
 
+### CanvasNote
+Nota en markdown guardada en el workspace de contenido. Tiene título, contenido, carpeta, tags y estado de favorito. Sirve como material de referencia para la creación de contenido.
+
+### CanvasLink
+Link de referencia guardado en el workspace. Tiene URL, título, descripción, carpeta y tags. Permite centralizar recursos externos relevantes.
+
+### CanvasFolder
+Carpeta para organizar notas y links en el workspace por tema o proyecto.
+
 ## Relationships
 
 - BrandProfile tiene muchos Post, Carousel e Image (el tono se aplica a todo el contenido)
@@ -38,3 +47,6 @@ Referencia externa usada como inspiración: texto pegado, link de YouTube, artí
 - Post tiene muchos HashtagSet
 - CalendarEntry referencia un Post, Carousel o Image (contenido programado)
 - ContentSource genera muchos Post (una fuente puede inspirar varios posts)
+- CanvasFolder tiene muchos CanvasNote y CanvasLink
+- CanvasNote pertenece a un CanvasFolder
+- CanvasLink pertenece a un CanvasFolder

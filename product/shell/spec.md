@@ -23,6 +23,7 @@
 | 4     | Brand & Avatar    | UserCircle          | /brand-avatar        |
 | 5     | Content Calendar  | CalendarDays        | /content-calendar    |
 | 6     | Content Sources   | Bookmark            | /content-sources     |
+| 7     | Canvas            | LayoutGrid          | /canvas              |
 
 ### Navigation States
 - **Default**: slate-700 text / slate-300 dark text
