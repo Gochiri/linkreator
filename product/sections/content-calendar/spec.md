@@ -1,4 +1,4 @@
-# Content Calendar
+2# Content Calendar
 
 ## Overview
 Calendario visual para planificar y organizar el contenido de LinkedIn. Permite ver publicaciones programadas por semana o mes, mantener frecuencia constante, y tener una vista panorámica de la estrategia de contenido. Incluye indicadores de tipo de contenido y estado.
