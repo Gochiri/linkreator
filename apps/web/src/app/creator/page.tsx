@@ -1,5 +1,7 @@
-import data from '@/../product/sections/content-creator/data.json'
-import { ContentCreator } from './components/ContentCreator'
+'use client'
+
+import data from '@/components/content-creator/data.json'
+import { ContentCreator } from '@/components/content-creator/components/ContentCreator'
 
 export default function ContentCreatorView() {
   return (
@@ -12,3 +14,4 @@ export default function ContentCreatorView() {
     />
   )
 }
+

@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import { PenLine } from 'lucide-react'
 import { ContentTypeSelector } from './ContentTypeSelector'

@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import {
   ThumbsUp,
@@ -101,11 +103,10 @@ export function LinkedInPreview({ content, hashtags, creator }: LinkedInPreviewP
         {/* Post content */}
         <div className="px-4 pb-3">
           <div
-            className={`text-sm leading-relaxed whitespace-pre-line ${
-              hasContent
+            className={`text-sm leading-relaxed whitespace-pre-line ${hasContent
                 ? 'text-slate-800 dark:text-slate-200'
                 : 'text-slate-400 dark:text-slate-600 italic'
-            }`}
+              }`}
           >
             {hasContent ? formatContent(truncatedContent) : displayContent}
           </div>

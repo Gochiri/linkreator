@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Lightbulb,
   BookOpen,
@@ -95,18 +97,16 @@ export function ContentTypeSelector({ contentTypes, activeType, onSelect }: Cont
                   `}
                 >
                   <IconComponent
-                    className={`w-4.5 h-4.5 transition-colors ${
-                      isActive ? colors.icon : 'text-slate-500 dark:text-slate-400'
-                    }`}
+                    className={`w-4.5 h-4.5 transition-colors ${isActive ? colors.icon : 'text-slate-500 dark:text-slate-400'
+                      }`}
                   />
                 </div>
                 <div className="min-w-0 flex-1">
                   <p
-                    className={`text-sm font-medium leading-tight ${
-                      isActive
+                    className={`text-sm font-medium leading-tight ${isActive
                         ? 'text-slate-900 dark:text-slate-100'
                         : 'text-slate-700 dark:text-slate-300'
-                    }`}
+                      }`}
                   >
                     {type.label}
                   </p>

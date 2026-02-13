@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import { Sparkles, AlertCircle, Type } from 'lucide-react'
 
@@ -114,25 +116,23 @@ export function PostEditor({
             <div className="flex-1 max-w-[200px]">
               <div className="h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
                 <div
-                  className={`h-full rounded-full transition-all duration-300 ${
-                    isOverLimit
+                  className={`h-full rounded-full transition-all duration-300 ${isOverLimit
                       ? 'bg-red-500'
                       : isNearLimit
                         ? 'bg-amber-500'
                         : 'bg-emerald-500'
-                  }`}
+                    }`}
                   style={{ width: `${charPercentage}%` }}
                 />
               </div>
             </div>
             <span
-              className={`text-xs font-mono tabular-nums ${
-                isOverLimit
+              className={`text-xs font-mono tabular-nums ${isOverLimit
                   ? 'text-red-500 font-semibold'
                   : isNearLimit
                     ? 'text-amber-600 dark:text-amber-400'
                     : 'text-slate-500 dark:text-slate-400'
-              }`}
+                }`}
             >
               {charCount.toLocaleString()} / {maxChars.toLocaleString()}
             </span>
