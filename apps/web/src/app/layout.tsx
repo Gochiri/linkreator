@@ -39,7 +39,7 @@ export default async function RootLayout({
   } : undefined;
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${fontHeading.variable} ${fontBody.variable} ${fontMono.variable} antialiased font-body bg-background text-foreground`}
       >
