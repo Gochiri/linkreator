@@ -9,10 +9,19 @@ import {
 import { Separator } from "@/components/ui/separator"
 import { AppSidebar } from "./AppSidebar"
 
-export function AppShell({ children }: { children: React.ReactNode }) {
+interface AppShellProps {
+    children: React.ReactNode
+    user?: {
+        name: string
+        email?: string
+        avatarUrl?: string
+    }
+}
+
+export function AppShell({ children, user }: AppShellProps) {
     return (
         <SidebarProvider>
-            <AppSidebar />
+            <AppSidebar user={user} />
             <SidebarInset>
                 <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12 border-b border-sidebar-border bg-sidebar px-4 md:px-6">
                     <div className="flex items-center gap-2">

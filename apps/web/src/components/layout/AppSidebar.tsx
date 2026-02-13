@@ -94,7 +94,15 @@ const navItems = [
     },
 ]
 
-export function AppSidebar() {
+interface AppSidebarProps {
+    user?: {
+        name: string
+        email?: string
+        avatarUrl?: string
+    }
+}
+
+export function AppSidebar({ user }: AppSidebarProps) {
     const pathname = usePathname()
 
     return (
@@ -109,7 +117,7 @@ export function AppSidebar() {
                                 </div>
                                 <div className="grid flex-1 text-left text-sm leading-tight">
                                     <span className="truncate font-semibold">Linkreator</span>
-                                    <span className="truncate text-xs">Design OS</span>
+                                    <span className="truncate text-xs">Content OS</span>
                                 </div>
                             </Link>
                         </SidebarMenuButton>
@@ -140,7 +148,7 @@ export function AppSidebar() {
             <SidebarFooter>
                 <SidebarMenu>
                     <SidebarMenuItem>
-                        <UserMenu />
+                        <UserMenu user={user} />
                     </SidebarMenuItem>
                 </SidebarMenu>
             </SidebarFooter>

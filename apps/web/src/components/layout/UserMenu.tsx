@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Button } from "@/components/ui/button"
 import { ChevronsUpDown, LogOut, Settings, User } from "lucide-react"
+import { createClient } from "@/lib/supabase/client"
+import { useRouter } from "next/navigation"
 
 interface UserMenuProps {
     user?: {
@@ -21,6 +23,14 @@ interface UserMenuProps {
 export function UserMenu({
     user = { name: "User", email: "user@example.com" },
 }: UserMenuProps) {
+    const router = useRouter()
+    const supabase = createClient()
+
+    const handleSignOut = async () => {
+        await supabase.auth.signOut()
+        router.refresh()
+    }
+
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -57,7 +67,7 @@ export function UserMenu({
                     <span>Settings</span>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem className="text-destructive focus:text-destructive">
+                <DropdownMenuItem className="text-destructive focus:text-destructive" onClick={handleSignOut}>
                     <LogOut className="mr-2 h-4 w-4" />
                     <span>Log out</span>
                 </DropdownMenuItem>
