@@ -1,5 +1,0 @@
-export { CarouselBuilder } from './CarouselBuilder'
-export { SlideThumbList } from './SlideThumbList'
-export { SlideCanvas } from './SlideCanvas'
-export { SlideEditor } from './SlideEditor'
-export { TemplateStrip } from './TemplateStrip'
