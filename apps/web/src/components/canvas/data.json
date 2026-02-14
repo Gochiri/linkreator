@@ -1,0 +1,103 @@
+{
+  "folders": [
+    { "id": "folder-1", "name": "Estrategia de Contenido", "icon": "folder", "color": "#3B82F6", "itemCount": 5 },
+    { "id": "folder-2", "name": "Automatización & IA", "icon": "folder", "color": "#F59E0B", "itemCount": 3 },
+    { "id": "folder-3", "name": "Personal Branding", "icon": "folder", "color": "#10B981", "itemCount": 4 },
+    { "id": "folder-4", "name": "Investigación", "icon": "folder", "color": "#8B5CF6", "itemCount": 2 }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "type": "note",
+      "title": "Framework de contenido semanal",
+      "content": "## Plan semanal\n\n- **Lunes**: Post educativo (tip o framework)\n- **Miércoles**: Storytelling (caso real o experiencia)\n- **Viernes**: Opinión polarizante o predicción\n\n### Reglas\n1. Siempre abrir con hook fuerte\n2. Máximo 200 palabras\n3. CTA al final\n4. 3-5 hashtags relevantes",
+      "folderId": "folder-1",
+      "tags": ["framework", "planificación"],
+      "isFavorite": true,
+      "createdAt": "2026-02-01",
+      "updatedAt": "2026-02-05"
+    },
+    {
+      "id": "note-2",
+      "type": "note",
+      "title": "Hooks que funcionan en LinkedIn",
+      "content": "## Hooks probados\n\n- \"Dejé de hacer X y pasó Y\"\n- \"El 90% de [audiencia] comete este error\"\n- \"No necesitas X para lograr Y\"\n- \"Esto me tomó 3 años entender:\"\n- \"La verdad sobre [tema] que nadie te dice\"",
+      "folderId": "folder-1",
+      "tags": ["hooks", "copywriting"],
+      "isFavorite": true,
+      "createdAt": "2026-01-28",
+      "updatedAt": "2026-02-03"
+    },
+    {
+      "id": "note-3",
+      "type": "note",
+      "title": "Ideas para serie de automatización",
+      "content": "## Serie: 5 errores al automatizar\n\n1. Automatizar procesos rotos\n2. No documentar antes de automatizar\n3. Querer automatizar todo de golpe\n4. Ignorar el mantenimiento\n5. No medir el ROI\n\nCada post: hook + error + ejemplo real + solución + CTA",
+      "folderId": "folder-2",
+      "tags": ["automatización", "serie"],
+      "isFavorite": false,
+      "createdAt": "2026-01-25",
+      "updatedAt": "2026-01-30"
+    },
+    {
+      "id": "note-4",
+      "type": "note",
+      "title": "Notas del video de Dan Koe",
+      "content": "## One-Person Business\n\n- La educación es el nuevo marketing\n- Construye audiencia antes que producto\n- Contenido + Oferta + Sistema\n- Tu marca personal = ventaja competitiva\n- Automatiza lo que no requiera creatividad",
+      "folderId": "folder-3",
+      "tags": ["dan-koe", "negocio"],
+      "isFavorite": false,
+      "createdAt": "2026-01-20",
+      "updatedAt": "2026-01-20"
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "type": "link",
+      "title": "How To Build A One-Person Business",
+      "url": "https://www.youtube.com/watch?v=example1",
+      "description": "Dan Koe explica cómo construir un negocio de una persona usando contenido y marca personal.",
+      "folderId": "folder-3",
+      "tags": ["youtube", "dan-koe"],
+      "isFavorite": true,
+      "createdAt": "2026-02-05",
+      "favicon": null
+    },
+    {
+      "id": "link-2",
+      "type": "link",
+      "title": "The Creator Economy Report 2026",
+      "url": "https://example.com/creator-economy-report",
+      "description": "Estadísticas actualizadas sobre la economía de creadores: ingresos, plataformas, tendencias.",
+      "folderId": "folder-4",
+      "tags": ["reporte", "estadísticas"],
+      "isFavorite": false,
+      "createdAt": "2026-02-02",
+      "favicon": null
+    },
+    {
+      "id": "link-3",
+      "type": "link",
+      "title": "LinkedIn Algorithm Deep Dive",
+      "url": "https://example.com/linkedin-algorithm",
+      "description": "Análisis detallado de cómo funciona el algoritmo de LinkedIn en 2026 y qué tipo de contenido prioriza.",
+      "folderId": "folder-1",
+      "tags": ["algoritmo", "linkedin"],
+      "isFavorite": true,
+      "createdAt": "2026-01-30",
+      "favicon": null
+    }
+  ],
+  "sidebarSections": [
+    { "id": "all", "label": "All Notes", "icon": "file-text", "count": 4 },
+    { "id": "links", "label": "Links", "icon": "link", "count": 3 },
+    { "id": "favorites", "label": "Favorites", "icon": "star", "count": 4 }
+  ],
+  "stats": {
+    "totalNotes": 4,
+    "totalLinks": 3,
+    "totalFolders": 4,
+    "recentlyUpdated": 3
+  }
+}

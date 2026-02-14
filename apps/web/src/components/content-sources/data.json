@@ -1,0 +1,86 @@
+{
+  "sourceTypes": [
+    { "id": "youtube", "label": "YouTube", "icon": "youtube", "color": "#FF0000" },
+    { "id": "article", "label": "Artículo", "icon": "file-text", "color": "#0EA5E9" },
+    { "id": "tweet", "label": "Tweet/Post", "icon": "message-circle", "color": "#1DA1F2" },
+    { "id": "note", "label": "Nota personal", "icon": "sticky-note", "color": "#F59E0B" }
+  ],
+  "savedSources": [
+    {
+      "id": "src-1",
+      "type": "youtube",
+      "title": "How To Build A One-Person Business (That Makes $1M+/Year)",
+      "url": "https://www.youtube.com/watch?v=example1",
+      "thumbnail": null,
+      "channel": "Dan Koe",
+      "duration": "24:15",
+      "dateAdded": "2026-02-05",
+      "extractedIdeas": [
+        "La educación es el nuevo marketing — enseña lo que sabes",
+        "Construye una audiencia antes de construir un producto",
+        "Un negocio de una persona funciona con: contenido + oferta + sistema",
+        "Automatiza todo lo que no requiera tu creatividad",
+        "Tu marca personal es tu mayor ventaja competitiva"
+      ],
+      "usedForPosts": 2
+    },
+    {
+      "id": "src-2",
+      "type": "article",
+      "title": "The Future of AI in Business Automation",
+      "url": null,
+      "referenceText": "Las empresas que adoptan IA en sus procesos de automatización están viendo un aumento del 40% en eficiencia operativa. La clave no está en reemplazar personas, sino en amplificar su capacidad. Los tres pilares de la automatización inteligente son: captura de datos, procesamiento y acción. La mayoría de empresas fallan porque automatizan procesos rotos en lugar de simplificarlos primero.",
+      "dateAdded": "2026-02-03",
+      "extractedIdeas": [
+        "40% aumento en eficiencia con IA en automatización",
+        "No reemplazar personas, amplificar su capacidad",
+        "Tres pilares: captura, procesamiento, acción",
+        "Error común: automatizar procesos rotos sin simplificar"
+      ],
+      "usedForPosts": 1
+    },
+    {
+      "id": "src-3",
+      "type": "tweet",
+      "title": "Tweet de Justin Welsh sobre contenido",
+      "url": null,
+      "referenceText": "Stop trying to go viral. Start trying to be useful. The best LinkedIn content does one thing: it makes the reader's life a little bit better. That's it. No tricks. No hacks. Just genuine value delivered consistently.",
+      "dateAdded": "2026-02-01",
+      "extractedIdeas": [
+        "No busques viralidad, busca ser útil",
+        "El mejor contenido mejora la vida del lector",
+        "Sin trucos: valor genuino entregado consistentemente"
+      ],
+      "usedForPosts": 1
+    },
+    {
+      "id": "src-4",
+      "type": "note",
+      "title": "Ideas para serie de automatización",
+      "url": null,
+      "referenceText": "Hacer una serie de 5 posts sobre los errores más comunes al automatizar. Cada post con un error y la solución. Usar ejemplos reales de clientes (sin nombres). Cerrar cada post con un tip accionable. Formato: hook + problema + solución + CTA.",
+      "dateAdded": "2026-01-28",
+      "extractedIdeas": [
+        "Serie de 5 posts sobre errores de automatización",
+        "Formato: hook + problema + solución + CTA",
+        "Usar ejemplos reales anónimos",
+        "Cada post con un tip accionable al final"
+      ],
+      "usedForPosts": 3
+    }
+  ],
+  "currentInput": {
+    "type": "youtube",
+    "url": "https://www.youtube.com/watch?v=example-new",
+    "title": "Why Most Businesses Fail at Automation",
+    "channel": "Tech Automation Hub",
+    "duration": "18:42",
+    "extractedIdeas": [
+      "El 67% de los proyectos de automatización fallan por falta de estrategia",
+      "Empieza por el proceso que más tiempo consume, no el más complejo",
+      "Documenta ANTES de automatizar",
+      "ROI de automatización: mide tiempo ahorrado × costo por hora",
+      "Las mejores automatizaciones son invisibles para el usuario final"
+    ]
+  }
+}

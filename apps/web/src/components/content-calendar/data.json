@@ -1,0 +1,38 @@
+{
+  "currentMonth": "2026-02",
+  "scheduledPosts": [
+    { "id": "cal-1", "date": "2026-02-09", "type": "post", "title": "El 90% de las empresas automatizan mal", "status": "scheduled", "time": "09:00" },
+    { "id": "cal-2", "date": "2026-02-10", "type": "carousel", "title": "5 automatizaciones que todo negocio necesita", "status": "scheduled", "time": "10:00" },
+    { "id": "cal-3", "date": "2026-02-11", "type": "image", "title": "Quote: La mejor automatización...", "status": "draft", "time": "09:00" },
+    { "id": "cal-4", "date": "2026-02-12", "type": "post", "title": "Mi framework de 4 pasos para automatizar", "status": "scheduled", "time": "08:30" },
+    { "id": "cal-5", "date": "2026-02-13", "type": "post", "title": "Historia: Dejé mi trabajo por las automatizaciones", "status": "draft", "time": "09:00" },
+    { "id": "cal-6", "date": "2026-02-16", "type": "carousel", "title": "Cómo elegir la herramienta de automatización correcta", "status": "idea", "time": null },
+    { "id": "cal-7", "date": "2026-02-17", "type": "post", "title": "3 señales de que necesitas automatizar YA", "status": "scheduled", "time": "09:00" },
+    { "id": "cal-8", "date": "2026-02-18", "type": "image", "title": "Stat: 73% ROI en 6 meses", "status": "scheduled", "time": "10:00" },
+    { "id": "cal-9", "date": "2026-02-19", "type": "post", "title": "La IA no te va a reemplazar. Alguien usando IA sí.", "status": "draft", "time": "09:00" },
+    { "id": "cal-10", "date": "2026-02-20", "type": "carousel", "title": "De 0 a automatizado: guía para principiantes", "status": "idea", "time": null },
+    { "id": "cal-11", "date": "2026-02-23", "type": "post", "title": "El error más caro en automatización", "status": "idea", "time": null },
+    { "id": "cal-12", "date": "2026-02-24", "type": "post", "title": "ChatGPT no es automatización. Es solo el principio.", "status": "scheduled", "time": "09:00" },
+    { "id": "cal-13", "date": "2026-02-25", "type": "image", "title": "Quote: Simplifica antes de automatizar", "status": "draft", "time": null },
+    { "id": "cal-14", "date": "2026-02-26", "type": "carousel", "title": "Las 3 capas de automatización empresarial", "status": "idea", "time": null },
+    { "id": "cal-15", "date": "2026-02-27", "type": "post", "title": "Lo que nadie te dice sobre implementar IA", "status": "scheduled", "time": "08:30" }
+  ],
+  "postStatuses": [
+    { "id": "idea", "label": "Idea", "color": "#A8A29E" },
+    { "id": "draft", "label": "Borrador", "color": "#F59E0B" },
+    { "id": "scheduled", "label": "Programado", "color": "#84CC16" },
+    { "id": "published", "label": "Publicado", "color": "#0EA5E9" }
+  ],
+  "contentTypeColors": {
+    "post": { "label": "Post", "color": "#0EA5E9", "bgColor": "#EFF6FF" },
+    "carousel": { "label": "Carrusel", "color": "#84CC16", "bgColor": "#F0FDF4" },
+    "image": { "label": "Imagen", "color": "#8B5CF6", "bgColor": "#F5F3FF" }
+  },
+  "weeklyGoal": 4,
+  "publishingStats": {
+    "thisWeek": 3,
+    "lastWeek": 4,
+    "thisMonth": 8,
+    "streak": 3
+  }
+}

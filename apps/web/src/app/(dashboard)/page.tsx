@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, PenTool, LayoutDashboard, Image as ImageIcon, CalendarDays } from "lucide-react";
+import { ArrowRight, PenTool, LayoutDashboard, Image as ImageIcon, CalendarDays, Library, Users, Palette, Settings } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
-  const quickActions = [
+  const creativeTools = [
     {
       title: "Content Creator",
       description: "Generate engaging LinkedIn posts with AI.",
@@ -28,13 +28,40 @@ export default function Home() {
       href: "/images",
       cta: "Generate Image",
       variant: "outline" as const,
-    },
+    }
+  ];
+
+  const strategyTools = [
     {
       title: "Content Calendar",
       description: "Schedule and organize your posts.",
       icon: CalendarDays,
       href: "/calendar",
       cta: "Go to Calendar",
+      variant: "ghost" as const,
+    },
+    {
+      title: "Canvas",
+      description: "Organize your notes and ideas visually.",
+      icon: LayoutDashboard, // Or StickyNote logic
+      href: "/canvas",
+      cta: "Go to Canvas",
+      variant: "ghost" as const,
+    },
+    {
+      title: "Content Sources",
+      description: "Manage your inspiration sources.",
+      icon: Library,
+      href: "/sources",
+      cta: "Manage Sources",
+      variant: "ghost" as const,
+    },
+    {
+      title: "Brand & Avatar",
+      description: "Define your voice and audience.",
+      icon: Users,
+      href: "/brand",
+      cta: "Configure Brand",
       variant: "ghost" as const,
     }
   ];
@@ -48,30 +75,61 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {quickActions.map((action) => (
-          <Card key={action.title} className="flex flex-col">
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">
-                {action.title}
-              </CardTitle>
-              <action.icon className="h-4 w-4 text-muted-foreground" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-xs text-muted-foreground mt-2">
-                {action.description}
-              </div>
-            </CardContent>
-            <CardFooter className="mt-auto pt-4">
-              <Button asChild size="sm" variant={action.variant} className="w-full">
-                <Link href={action.href}>
-                  {action.cta}
-                  {action.variant === 'default' && <ArrowRight className="ml-2 h-4 w-4" />}
-                </Link>
-              </Button>
-            </CardFooter>
-          </Card>
-        ))}
+      <div>
+        <h2 className="text-lg font-semibold mb-4">Creative Tools</h2>
+        <div className="grid gap-4 md:grid-cols-3">
+          {creativeTools.map((action) => (
+            <Card key={action.title} className="flex flex-col">
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">
+                  {action.title}
+                </CardTitle>
+                <action.icon className="h-4 w-4 text-muted-foreground" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-xs text-muted-foreground mt-2">
+                  {action.description}
+                </div>
+              </CardContent>
+              <CardFooter className="mt-auto pt-4">
+                <Button asChild size="sm" variant={action.variant} className="w-full">
+                  <Link href={action.href}>
+                    {action.cta}
+                    {action.variant === 'default' && <ArrowRight className="ml-2 h-4 w-4" />}
+                  </Link>
+                </Button>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h2 className="text-lg font-semibold mb-4">Strategy & Organization</h2>
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {strategyTools.map((action) => (
+            <Card key={action.title} className="flex flex-col">
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">
+                  {action.title}
+                </CardTitle>
+                <action.icon className="h-4 w-4 text-muted-foreground" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-xs text-muted-foreground mt-2">
+                  {action.description}
+                </div>
+              </CardContent>
+              <CardFooter className="mt-auto pt-4">
+                <Button asChild size="sm" variant={action.variant} className="w-full">
+                  <Link href={action.href}>
+                    {action.cta}
+                  </Link>
+                </Button>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">

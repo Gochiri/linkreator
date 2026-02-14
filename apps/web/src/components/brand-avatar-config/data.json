@@ -1,0 +1,75 @@
+{
+  "creatorProfile": {
+    "name": "Tu Nombre",
+    "title": "Automatizaciones & IA",
+    "tagline": "Soluciones nuevas a problemas viejos",
+    "industry": "Tecnología / Automatización",
+    "bio": "Ayudo a empresas y emprendedores a automatizar sus procesos con IA y herramientas no-code. Creo que la tecnología debe simplificar, no complicar.",
+    "avatar": "/placeholder-avatar.jpg"
+  },
+  "brandTone": {
+    "formalCasual": 35,
+    "technicalSimple": 45,
+    "seriousHumor": 30,
+    "inspirationalPractical": 70,
+    "references": ["Dan Koe", "Justin Welsh"],
+    "voiceTraits": ["Directo", "Minimalista", "Accionable", "Personal", "Contrarian"],
+    "writingRules": [
+      "Frases cortas. Una idea por línea.",
+      "Usa → para listas y pasos.",
+      "Empieza con un hook fuerte.",
+      "Cierra con reflexión o CTA sutil.",
+      "Habla como humano, no como corporación.",
+      "Usa datos concretos."
+    ]
+  },
+  "avatar": {
+    "name": "El Emprendedor Tech",
+    "role": "Founder / CEO / CTO de empresa pequeña-mediana",
+    "age": "28-45",
+    "industry": "Tech, SaaS, E-commerce, Agencias digitales",
+    "painPoints": [
+      "Pierde tiempo en tareas repetitivas que podrían automatizarse",
+      "No sabe por dónde empezar con IA y automatización",
+      "Ha intentado herramientas pero no logra implementarlas bien",
+      "Siente que su competencia avanza más rápido",
+      "Quiere escalar sin contratar más personas"
+    ],
+    "goals": [
+      "Automatizar procesos para tener más tiempo estratégico",
+      "Implementar IA de forma práctica en su negocio",
+      "Ser más eficiente sin aumentar costos",
+      "Mantenerse actualizado en tecnología",
+      "Construir sistemas que trabajen por ellos"
+    ],
+    "platforms": ["LinkedIn", "Twitter/X", "YouTube"],
+    "contentPreferences": ["Tips accionables", "Frameworks paso a paso", "Casos reales con resultados"]
+  },
+  "hashtagLibrary": {
+    "automatizacion": {
+      "label": "Automatización",
+      "color": "#84CC16",
+      "tags": ["#Automatización", "#NoCode", "#Zapier", "#Make", "#N8N", "#Workflows", "#Procesos"]
+    },
+    "ia": {
+      "label": "Inteligencia Artificial",
+      "color": "#0EA5E9",
+      "tags": ["#IA", "#InteligenciaArtificial", "#AI", "#ChatGPT", "#MachineLearning", "#OpenAI"]
+    },
+    "innovacion": {
+      "label": "Innovación",
+      "color": "#F59E0B",
+      "tags": ["#Innovación", "#Tecnología", "#FuturoDelTrabajo", "#TransformaciónDigital", "#Disrupción"]
+    },
+    "emprendimiento": {
+      "label": "Emprendimiento",
+      "color": "#EF4444",
+      "tags": ["#Emprendimiento", "#Startups", "#Negocios", "#Solopreneur", "#Founder"]
+    },
+    "productividad": {
+      "label": "Productividad",
+      "color": "#8B5CF6",
+      "tags": ["#Productividad", "#Eficiencia", "#GestiónDelTiempo", "#Hábitos", "#Growth"]
+    }
+  }
+}

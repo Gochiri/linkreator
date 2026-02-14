@@ -1,0 +1,130 @@
+{
+  "_meta": {
+    "models": {
+      "imageTypes": "Los tipos de imagen definen las categorías disponibles: quotes visuales, estadísticas, portadas de artículos y tips visuales.",
+      "templates": "Plantillas prediseñadas con estilos visuales que se pueden personalizar. Cada plantilla tiene colores, tipografía y layout predefinidos.",
+      "formats": "Formatos de exportación optimizados para LinkedIn con dimensiones específicas.",
+      "sampleImages": "Ejemplos de imágenes ya generadas que muestran el resultado final con diferentes estilos y contenidos.",
+      "brandColors": "Paleta de colores de marca precargada para mantener consistencia visual."
+    },
+    "relationships": [
+      "Cada Template pertenece a un ImageType específico",
+      "Las SampleImages pueden usar un Template como base o ser generadas con IA",
+      "Todas las imágenes se pueden exportar en cualquier Format",
+      "Los BrandColors se usan en todas las plantillas y pueden aplicarse a imágenes generadas con IA"
+    ]
+  },
+  "imageTypes": [
+    { "id": "quote", "label": "Quote visual", "icon": "quote", "description": "Frase inspiradora o insight con diseño" },
+    { "id": "stat", "label": "Estadística", "icon": "trending-up", "description": "Dato impactante con número grande" },
+    { "id": "cover", "label": "Portada de artículo", "icon": "file-text", "description": "Cover image para artículos LinkedIn" },
+    { "id": "tip-card", "label": "Tip visual", "icon": "zap", "description": "Consejo rápido en formato imagen" }
+  ],
+  "formats": [
+    { "id": "landscape", "label": "Landscape", "width": 1200, "height": 627, "ratio": "1.91:1" },
+    { "id": "square", "label": "Cuadrado", "width": 1080, "height": 1080, "ratio": "1:1" },
+    { "id": "portrait", "label": "Retrato", "width": 1080, "height": 1350, "ratio": "4:5" }
+  ],
+  "templates": [
+    {
+      "id": "minimal-dark",
+      "name": "Minimal Dark",
+      "type": "quote",
+      "bgColor": "#1C1917",
+      "textColor": "#FAFAF9",
+      "accentColor": "#84CC16",
+      "preview": "dark",
+      "fontFamily": "Inter"
+    },
+    {
+      "id": "clean-light",
+      "name": "Clean Light",
+      "type": "stat",
+      "bgColor": "#FAFAF9",
+      "textColor": "#1C1917",
+      "accentColor": "#0EA5E9",
+      "preview": "light",
+      "fontFamily": "Space Grotesk"
+    },
+    {
+      "id": "bold-gradient",
+      "name": "Bold Gradient",
+      "type": "cover",
+      "bgColor": "#1E293B",
+      "textColor": "#F8FAFC",
+      "accentColor": "#F59E0B",
+      "preview": "gradient",
+      "fontFamily": "DM Sans"
+    },
+    {
+      "id": "lime-pop",
+      "name": "Lime Pop",
+      "type": "tip-card",
+      "bgColor": "#0F172A",
+      "textColor": "#F0FDF4",
+      "accentColor": "#84CC16",
+      "preview": "lime",
+      "fontFamily": "Inter"
+    }
+  ],
+  "sampleImages": [
+    {
+      "id": "img-1",
+      "type": "quote",
+      "format": "square",
+      "method": "template",
+      "text": "La mejor automatización es la que elimina pasos innecesarios. No la que los hace más rápido.",
+      "author": "Tu Nombre",
+      "bgColor": "#1C1917",
+      "textColor": "#FAFAF9",
+      "accentColor": "#84CC16",
+      "templateId": "minimal-dark"
+    },
+    {
+      "id": "img-2",
+      "type": "stat",
+      "format": "landscape",
+      "method": "template",
+      "headline": "73%",
+      "subtext": "de las empresas que automatizan sus procesos ven ROI positivo en menos de 6 meses",
+      "source": "McKinsey 2024",
+      "bgColor": "#0F172A",
+      "textColor": "#F8FAFC",
+      "accentColor": "#0EA5E9",
+      "templateId": "clean-light"
+    },
+    {
+      "id": "img-3",
+      "type": "tip-card",
+      "format": "square",
+      "method": "template",
+      "title": "Tip del día",
+      "body": "Antes de automatizar un proceso, pregúntate: ¿necesita existir?",
+      "number": "01",
+      "bgColor": "#FAFAF9",
+      "textColor": "#1C1917",
+      "accentColor": "#84CC16",
+      "templateId": "lime-pop"
+    },
+    {
+      "id": "img-4",
+      "type": "cover",
+      "format": "landscape",
+      "method": "ai-generated",
+      "prompt": "Modern abstract tech background with neural network patterns in lime green and dark gray, minimalist style",
+      "text": "El Futuro de la IA en Negocios",
+      "bgColor": "#1E293B",
+      "textColor": "#F8FAFC",
+      "accentColor": "#F59E0B",
+      "templateId": null
+    }
+  ],
+  "brandColors": [
+    { "name": "Dark", "value": "#1C1917" },
+    { "name": "Light", "value": "#FAFAF9" },
+    { "name": "Lime", "value": "#84CC16" },
+    { "name": "Sky", "value": "#0EA5E9" },
+    { "name": "Amber", "value": "#F59E0B" },
+    { "name": "Slate", "value": "#0F172A" }
+  ]
+}
